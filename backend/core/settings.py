@@ -17,7 +17,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-EXTERNAL_APPS = []
+EXTERNAL_APPS = [
+    'home',
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
