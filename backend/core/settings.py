@@ -19,6 +19,8 @@ ALLOWED_HOSTS = []
 # Application definition
 EXTERNAL_APPS = [
     'home',
+    'account',
+    'rest_framework',
 ]
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -116,3 +118,10 @@ MEDIA_ROOT = join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    
+# For Custom User auth Model.
+AUTH_USER_MODEL = "account.Account"

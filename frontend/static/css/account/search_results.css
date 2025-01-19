@@ -1,0 +1,17 @@
+.profile-image {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 12px;
+}
+.card {
+    border-radius: 12px;
+}
+.friends-text {
+    font-weight: 500;
+}
+.checkmark-icon {
+    color: green;
+}
+.cancel-icon {
+    color: red;
+}
